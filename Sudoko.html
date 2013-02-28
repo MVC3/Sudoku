@@ -1,0 +1,86 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function()
+{
+	$("input:button[id=nbutton]").click(function()
+	    {
+		var b11=4
+		var b12=2
+		var b13=Number($("input:text[class=13]").val());
+		var b14=Number($("input:text[class=14]").val());
+		var b21=Number($("input:text[class=21]").val());
+		var b22=Number($("input:text[class=22]").val());
+		var b23=2
+		var b24=Number($("input:text[class=24]").val());
+		var b31=3
+		var b32=Number($("input:text[class=32]").val());
+		var b33=Number($("input:text[class=33]").val());
+		var b34=2
+		var b41=Number($("input:text[class=41]").val());
+		var b42=4
+		var b43=Number($("input:text[class=43]").val());
+		var b44=Number($("input:text[class=44]").val());
+		var row1=(b11+b12+b13+b14)
+		var row2=(b21+b22+b23+b24)
+		var row3=(b31+b32+b33+b34)
+		var row4=(b41+b42+b43+b44)	
+		var col1=(b11+b21+b31+b41)
+		var col2=(b12+b22+b32+b42)
+		var col3=(b13+b23+b33+b43)
+		var col4=(b14+b24+b34+b44)
+		var box1=(b11+b12+b21+b22)
+		var box2=(b31+b32+b41+b42)
+		var box3=(b13+b14+b23+b24)
+		var box4=(b33+b34+b43+b44)
+			if(row1==row2 && row2==row3 && row3==row4 && col1==col2 && col2==col3 && col3==col4 && box1==box2 && box2==box3 && box3==box4)
+				{
+				alert("Congratulations you have won the game");
+				}
+				else
+				{
+				alert("Good try");
+				 }
+	});
+});
+
+
+</script>
+</head>
+<body>
+<table align="center" height="100px" width="100px">
+<tr align="center" >
+<td> <input id="ntext" class="11" type="text" value="4" name="ntext" size="1" disabled="true"> </td>
+<td> <input id="ntext" class="12" type="text" value="2" name="ntext" size="1" disabled="true"> </td>
+<td> <input id="ntext" class="13" type="text" value="" name="ntext" size="1"> </td>
+<td> <input id="ntext" class="14" type="text" value="" name="ntext" size="1"> </td>
+<tr>
+
+<tr align="center">
+<td> <input id="ntext" class="21" type="text" value="" name="ntext" size="1"> </td>
+<td> <input id="ntext" class="22" type="text" value="" name="ntext" size="1"> </td>
+<td> <input id="ntext" class="23" type="text" value="2" name="ntext" size="1" disabled="true"> </td>
+<td> <input id="ntext" class="24" type="text" value="" name="ntext" size="1"> </td>
+</tr>
+
+<tr align="center" >
+<td> <input id="ntext" class="31" type="text" value="3" name="ntext" size="1" disabled="true"> </td>
+<td> <input id="ntext" class="32" type="text" value="" name="ntext" size="1"> </td>
+<td> <input id="ntext" class="33" type="text" value="" name="ntext" size="1"> </td>
+<td> <input id="ntext" class="34" type="text" value="2" name="ntext" size="1" disabled="true"> </td>
+<tr>
+
+<tr align="center">
+<td> <input id="ntext" class="41" type="text" value="" name="ntext" size="1"> </td>
+<td> <input id="ntext" class="42" type="text" value="4" name="ntext" size="1"disabled="true"> </td>
+<td> <input id="ntext" class="43" type="text" value="" name="ntext" size="1"> </td>
+<td> <input id="ntext" class="44" type="text" value="" name="ntext" size="1"> </td>
+</tr>
+<tr>
+</table>
+<center>
+<input id="nbutton" class="b" type="button" value="Done" name="button"> 
+</center>
+</body>
+</html>
